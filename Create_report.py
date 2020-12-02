@@ -102,22 +102,22 @@ def generate_report(yesterday,filename):
 
     pdf.ln(20)
     pdf.set_font('Arial','',17)
-    pdf.write(5,f'Total COVID-19 Deaths cases in India till {yesterday}')
+    pdf.write(5,f'Total COVID-19 Death cases in India till {yesterday}')
     pdf.ln(10)
     pdf.set_font('Arial','B',17)
     pdf.write(5,f'{total_deceased_cases:,}')
 
     pdf.ln(35)
     pdf.set_font('Arial','',16)
-    pdf.write(5,f'Confirmed cases rises in one day : {total_confirmed_cases-confirmed_cases_day_before:,}')
+    pdf.write(5,f'Rise in Confirmed cases on {yesterday} : {total_confirmed_cases-confirmed_cases_day_before:,}')
 
     pdf.ln(20)
     pdf.set_font('Arial','',16)
-    pdf.write(5,f'Recovered cases in one day : {total_recovered_cases-recovered_cases_day_before:,}')
+    pdf.write(5,f'Rise in Recovered cases on {yesterday} : {total_recovered_cases-recovered_cases_day_before:,}')
 
     pdf.ln(20)
     pdf.set_font('Arial','',16)
-    pdf.write(5,f'Death in one day : {total_deceased_cases-deceased_cases_day_before:,}')
+    pdf.write(5,f'Rise in Deaths on {yesterday} : {total_deceased_cases-deceased_cases_day_before:,}')
 
     pdf.add_page()  
     pdf.image('./image/Confirmed.png',5,5,WIDTH-20)
@@ -139,16 +139,13 @@ generate_report(yesterday,'covid_report.pdf')
 
 #send - email script
 
-contacts = [EMAIL_ADDRESS,'prachi.jpatel11@gmail.com',
-                        'tithishah0708@gmail.com',
-                        'jainneel9933@gmail.com',
-                        'insuocover@rediffmail.com',
-                        'vatsal.mevada@live.com',
-                        'karmasmart216@gmail.com']
+#you need to specify your contact in list for email
+contact = []
+
 msg = EmailMessage()
 msg['Subject'] = 'COVID-19 Report'
 msg['From'] =EMAIL_ADDRESS
-msg['To'] = contacts
+msg['To'] = 'prachi.jpatel11@gmail.com'
 # msg.set_content('Good work')
 
 msg.add_alternative("""
