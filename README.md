@@ -20,11 +20,18 @@
 $ pip install fpdf
 $ pip install plotly
 ```
+<<<<<<< HEAD
 ---
 
  ### Whenever you run this project on your computer you have to run only create_report.py file.
 
  ### Some error might occur because of sending email, you need to specify your email address and password.
+=======
+
+> ### Whenever you run this project on your computer you have to run only create_report.py file.
+
+> ### Some error might occur because of sending email, you need to specify your email address and password.
+>>>>>>> ca7bded04bbfcc3d03ceb07686669fbbe37b2f22
 
 
 ### For automation i used Cronjob for automatic run my script on particluar time.
