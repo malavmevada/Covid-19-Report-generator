@@ -7,6 +7,8 @@
 
 ## This report generate automatic and also send through email.
 
+## [Covid-19 Report](https://github.com/malavmevada/Covid-19-Report-generator/blob/master/covid_report.pdf)
+
 ## Here is the source data link
 
 ---
