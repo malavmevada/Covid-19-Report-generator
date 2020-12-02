@@ -22,7 +22,7 @@
 $ pip install fpdf
 $ pip install plotly
 ```
----
+
 
  ### Whenever you run this project on your computer you have to run only create_report.py file.
 
