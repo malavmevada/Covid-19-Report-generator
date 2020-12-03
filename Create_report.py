@@ -140,7 +140,7 @@ generate_report(yesterday,'covid_report.pdf')
 #send - email script
 
 #you need to specify your contact in list for email
-contact = []
+contact = [EMAIL_ADDRESS]
 
 msg = EmailMessage()
 msg['Subject'] = 'COVID-19 Report'
